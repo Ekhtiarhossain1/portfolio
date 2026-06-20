@@ -1,0 +1,6 @@
+Add these two files in this "assets" folder:
+
+1. profile.jpg  →  Your profile photo (square works best, e.g. 400x400px)
+2. resume.pdf   →  Your resume PDF (used by the "Resume" download button)
+
+Once added, you can delete this text file.

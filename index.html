@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md. Ekhtiar Hossain - Network Engineer & Cybersecurity Enthusiast Portfolio">
+    <title>Md. Ekhtiar Hossain | Network Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">EH<span>.</span></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#certifications" class="nav__link">Certs</a></li>
+                    <li><a href="#education" class="nav__link">Education</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__actions">
+                <a href="assets/resume.pdf" download class="btn btn--small"><i class="fa-solid fa-download"></i> Resume</a>
+                <i class="fa-solid fa-bars-staggered nav__toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ===== HERO ===== -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__data">
+                    <p class="hero__greeting">// Hello World, I am</p>
+                    <h1 class="hero__name">Md. Ekhtiar Hossain</h1>
+                    <h2 class="hero__title">&gt; <span class="typing" id="typing"></span><span class="cursor">_</span></h2>
+                    <p class="hero__description">
+                        CSE student passionate about networking and cybersecurity. I design, build, and secure
+                        networks — from VLSM subnetting and inter-VLAN routing to vulnerability scanning in my home lab.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                    </div>
+                    <div class="hero__socials">
+                        <a href="https://github.com/Ekhtiarhossain1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ekhtiar10" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:ekhtiarhossain10@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__blob">
+                        <img src="assets/profile.jpg" alt="Md. Ekhtiar Hossain" onerror="this.src='https://placehold.co/400x400/0a0e0a/00ff41?text=Add+Photo'">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="hero__scroll">
+                <i class="fa-solid fa-computer-mouse"></i>
+                <span>Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title"><span class="section__num">01.</span> About Me</h2>
+                <div class="about__container">
+                    <div class="about__content">
+                        <p class="about__text">
+                            I'm a Computer Science and Engineering student at the
+                            <strong>International University of Business Agriculture and Technology (IUBAT)</strong>,
+                            with hands-on experience in IP addressing, routing, switching, and network troubleshooting.
+                        </p>
+                        <p class="about__text">
+                            I'm comfortable using <strong>Wireshark</strong> and <strong>Nmap</strong> to diagnose issues
+                            and support network performance. I'm currently seeking a networking internship to build
+                            practical experience in deployment, monitoring, and maintenance.
+                        </p>
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h3>3.79</h3>
+                                <span>CGPA / 4.0</span>
+                            </div>
+                            <div class="about__box">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <h3>4+</h3>
+                                <span>Projects</span>
+                            </div>
+                            <div class="about__box">
+                                <i class="fa-solid fa-certificate"></i>
+                                <h3>4+</h3>
+                                <span>Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title"><span class="section__num">02.</span> Skills &amp; Tools</h2>
+                <div class="skills__container">
+                    <div class="skills__card">
+                        <div class="skills__header"><i class="fa-solid fa-network-wired"></i><h3>Networking</h3></div>
+                        <ul class="skills__list">
+                            <li>TCP/IP</li><li>IP Addressing</li><li>Subnetting (VLSM)</li>
+                            <li>Routing</li><li>Switching</li><li>VLAN Configuration</li>
+                            <li>Inter-VLAN Routing (802.1Q)</li><li>Network Troubleshooting</li>
+                        </ul>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__header"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Tools</h3></div>
+                        <ul class="skills__list">
+                            <li>Wireshark</li><li>Nmap</li><li>Cisco Packet Tracer</li>
+                            <li>OpenVAS</li><li>VirtualBox</li>
+                        </ul>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__header"><i class="fa-solid fa-server"></i><h3>Systems</h3></div>
+                        <ul class="skills__list">
+                            <li>Linux (Kali)</li><li>Linux (Ubuntu)</li>
+                            <li>Ubuntu Server</li><li>Windows</li>
+                        </ul>
+                    </div>
+                    <div class="skills__card">
+                        <div class="skills__header"><i class="fa-solid fa-shield-halved"></i><h3>Security</h3></div>
+                        <ul class="skills__list">
+                            <li>Vulnerability Assessment</li><li>Traffic Analysis</li>
+                            <li>Packet Capture</li><li>Network Scanning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title"><span class="section__num">03.</span> Projects</h2>
+                <div class="projects__container">
+                    <article class="project__card">
+                        <div class="project__top">
+                            <i class="fa-solid fa-shield-virus project__icon"></i>
+                            <div class="project__links">
+                                <a href="https://github.com/Ekhtiarhossain1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Cyber Security Home Lab</h3>
+                        <p class="project__desc">
+                            Built a virtualized cybersecurity home lab in VirtualBox using Kali Linux, Metasploitable 2 &amp; 3,
+                            Ubuntu Server, and Windows to simulate real-world testing scenarios. Performed traffic monitoring
+                            and vulnerability scanning using Wireshark, Nmap, and OpenVAS.
+                        </p>
+                        <ul class="project__tags">
+                            <li>VirtualBox</li><li>Kali Linux</li><li>Wireshark</li><li>Nmap</li><li>OpenVAS</li>
+                        </ul>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__top">
+                            <i class="fa-solid fa-sitemap project__icon"></i>
+                            <div class="project__links">
+                                <a href="https://github.com/Ekhtiarhossain1/multi-router-campus-network-vlan-rip" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Multi-Router Campus Network Design</h3>
+                        <p class="project__desc">
+                            Designed a multi-building campus network using VLANs, VLSM, and RIP routing. Implemented
+                            inter-VLAN routing (router-on-a-stick) with 802.1Q trunking, and configured &amp; verified
+                            dynamic routing and network resilience.
+                        </p>
+                        <ul class="project__tags">
+                            <li>VLANs</li><li>VLSM</li><li>RIP</li><li>802.1Q</li><li>Packet Tracer</li>
+                        </ul>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__top">
+                            <i class="fa-solid fa-diagram-project project__icon"></i>
+                            <div class="project__links">
+                                <a href="https://github.com/Ekhtiarhossain1/vlsm-subnetting-rip-network" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">VLSM Subnetting &amp; Multi-LAN Network</h3>
+                        <p class="project__desc">
+                            Designed a scalable IP addressing scheme using VLSM subnetting and implemented RIP v2
+                            for dynamic routing between multiple LANs, efficiently allocating subnets across the topology.
+                        </p>
+                        <ul class="project__tags">
+                            <li>VLSM</li><li>RIP v2</li><li>IP Addressing</li><li>Subnetting</li>
+                        </ul>
+                    </article>
+
+                    <article class="project__card">
+                        <div class="project__top">
+                            <i class="fa-solid fa-route project__icon"></i>
+                            <div class="project__links">
+                                <a href="https://github.com/Ekhtiarhossain1/Routing-Lab" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Static &amp; RIP Routing with VLSM</h3>
+                        <p class="project__desc">
+                            Built a multi-router topology with multiple LANs to simulate real-world network environments.
+                            Configured static routes for manual path control and RIP v2 for dynamic routing.
+                        </p>
+                        <ul class="project__tags">
+                            <li>Static Routing</li><li>RIP v2</li><li>VLSM</li><li>Multi-Router</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CERTIFICATIONS ===== -->
+        <section class="certs section" id="certifications">
+            <div class="container">
+                <h2 class="section__title"><span class="section__num">04.</span> Certifications &amp; Courses</h2>
+                <div class="certs__container">
+                    <div class="cert__card">
+                        <i class="fa-solid fa-award cert__icon"></i>
+                        <h3>Networking Basics</h3>
+                        <span>Cisco</span>
+                    </div>
+                    <div class="cert__card">
+                        <i class="fa-solid fa-award cert__icon"></i>
+                        <h3>Introduction to Network Analysis</h3>
+                        <span>Security Blue Team</span>
+                    </div>
+                    <div class="cert__card">
+                        <i class="fa-solid fa-award cert__icon"></i>
+                        <h3>Linux 100: Fundamentals</h3>
+                        <span>TCM Security</span>
+                    </div>
+                    <div class="cert__card">
+                        <i class="fa-solid fa-award cert__icon"></i>
+                        <h3>Advanced Cybersecurity Training</h3>
+                        <span>Business Automation Ltd.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EDUCATION ===== -->
+        <section class="education section" id="education">
+            <div class="container">
+                <h2 class="section__title"><span class="section__num">05.</span> Education</h2>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">09/2022 - Present</span>
+                            <h3>BSc in Computer Science &amp; Engineering</h3>
+                            <p>International University of Business Agriculture and Technology (IUBAT)</p>
+                            <span class="timeline__badge">CGPA: 3.79 / 4.0</span>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2019 - 2021</span>
+                            <h3>Higher Secondary School Certificate</h3>
+                            <p>Uttara Model College</p>
+                            <span class="timeline__badge">GPA: 4.92 / 5.0</span>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2017 - 2019</span>
+                            <h3>Secondary School Certificate</h3>
+                            <p>Shahid Academic School</p>
+                            <span class="timeline__badge">GPA: 4.57 / 5.0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="achievements__heading">Key Achievements</h3>
+                <div class="achievements__container">
+                    <div class="achievement__card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4>Configured Inter-VLAN Routing</h4>
+                        <p>Achieved full communication across multiple VLANs using 802.1Q trunking and router-on-a-stick in a simulated campus environment.</p>
+                    </div>
+                    <div class="achievement__card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4>Analyzed Real Network Traffic</h4>
+                        <p>Captured and interpreted live packets using Wireshark and Nmap during vulnerability scanning exercises in a home lab setup.</p>
+                    </div>
+                    <div class="achievement__card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4>Scalable IP Addressing from Scratch</h4>
+                        <p>Designed a VLSM-based addressing scheme that efficiently allocated subnets across a multi-building network topology.</p>
+                    </div>
+                    <div class="achievement__card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4>3.79 GPA with Hands-On Lab Work</h4>
+                        <p>Balanced strong academic performance alongside practical networking and cybersecurity projects throughout the degree.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title"><span class="section__num">06.</span> Get In Touch</h2>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <h3>Let's connect!</h3>
+                        <p>I'm currently looking for networking internship opportunities. Feel free to reach out — my inbox is always open.</p>
+                        <div class="contact__details">
+                            <a href="mailto:ekhtiarhossain10@gmail.com" class="contact__detail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div><span>Email</span><p>ekhtiarhossain10@gmail.com</p></div>
+                            </a>
+                            <a href="tel:+8801630710626" class="contact__detail">
+                                <i class="fa-solid fa-phone"></i>
+                                <div><span>Phone</span><p>+880 163 071 0626</p></div>
+                            </a>
+                            <a href="https://linkedin.com/in/ekhtiar10" target="_blank" rel="noopener" class="contact__detail">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <div><span>LinkedIn</span><p>in/ekhtiar10</p></div>
+                            </a>
+                            <div class="contact__detail">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div><span>Location</span><p>Uttara-10, Dhaka</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form__group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        <p class="form__status" id="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="#home" class="nav__logo">EH<span>.</span></a>
+            <div class="footer__socials">
+                <a href="https://github.com/Ekhtiarhossain1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/ekhtiar10" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:ekhtiarhossain10@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="footer__copy">&copy; <span id="year"></span> Md. Ekhtiar Hossain. Built with <i class="fa-solid fa-heart"></i> &amp; code.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="scrolltop" id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
