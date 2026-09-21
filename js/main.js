@@ -20,8 +20,8 @@ window.addEventListener('scroll', () => {
 /* ===== TYPING EFFECT ===== */
 const typingEl = document.getElementById('typing');
 const roles = [
-    'Junior IT Engineer',
     'Network Support Engineer',
+    'ISP Network Support',
     'Cybersecurity Enthusiast',
     'ISP Network Troubleshooter'
 ];
