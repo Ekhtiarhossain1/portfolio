@@ -107,14 +107,28 @@ if (form) {
             return;
         }
 
-        // Opens the user's email client pre-filled
+        // Try the device's email client first. If the page stays active, no
+        // client is configured, so continue to Gmail's compose screen instead.
         const subject = encodeURIComponent(`Portfolio contact from ${name}`);
         const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=ekhtiarhossain10%40gmail.com&su=${subject}&body=${body}`;
+        let emailAppOpened = false;
+
+        const markEmailAppOpened = () => {
+            if (document.visibilityState === 'hidden') emailAppOpened = true;
+        };
+        document.addEventListener('visibilitychange', markEmailAppOpened);
+
         window.location.href = `mailto:ekhtiarhossain10@gmail.com?subject=${subject}&body=${body}`;
 
-        status.textContent = '> Opening your email app...';
+        status.textContent = '> Opening your email app. Gmail will open if no app is available...';
         status.style.color = 'var(--accent)';
         form.reset();
+
+        window.setTimeout(() => {
+            document.removeEventListener('visibilitychange', markEmailAppOpened);
+            if (!emailAppOpened) window.location.href = gmailUrl;
+        }, 1500);
     });
 }
 
