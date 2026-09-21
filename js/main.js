@@ -20,10 +20,10 @@ window.addEventListener('scroll', () => {
 /* ===== TYPING EFFECT ===== */
 const typingEl = document.getElementById('typing');
 const roles = [
-    'Network Engineer',
-    'CSE Student',
+    'Junior IT Engineer',
+    'Network Support Engineer',
     'Cybersecurity Enthusiast',
-    'Network Troubleshooter'
+    'ISP Network Troubleshooter'
 ];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 
@@ -76,7 +76,7 @@ window.addEventListener('scroll', () => {
 
 /* ===== REVEAL ON SCROLL ===== */
 const revealEls = document.querySelectorAll(
-    '.about__box, .skills__card, .project__card, .cert__card, .timeline__item, .achievement__card, .contact__info, .contact__form'
+    '.about__box, .experience__card, .skills__card, .project__card, .cert__card, .timeline__item, .achievement__card, .contact__info, .contact__form'
 );
 revealEls.forEach(el => el.classList.add('reveal'));
 
